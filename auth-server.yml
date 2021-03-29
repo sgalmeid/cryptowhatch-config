@@ -28,9 +28,10 @@ spring:
         data: classpath:/sql/data.sql
         driver-class-name: com.mysql.jdbc.Driver
         password: qwerty
-        platform: mysql
+        ##platform: mysql
         schema: classpath:/sql/schema.sql
-        url: jdbc:mysql://localhost:3306/mysql-jdbc?verifyServerCertificate=false&useSSL=false&requireSSL=false
+        url: jdbc:mysql://localhost:3306/mysql-jdbc
+        #?verifyServerCertificate=false&useSSL=false&requireSSL=false
         username: root
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
